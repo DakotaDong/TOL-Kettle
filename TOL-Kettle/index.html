@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How Kettles Work</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Merriweather">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>How Do <span>Kettles</span> Work?</h1>
+      </header>
+
+      <main>
+        <div id="board">
+          <div id="scene-start" class="scene">
+            <h2>In the following course, you will learn about how a kettle works!</h2>
+            <br />
+            <h2>Click start to begin learning!</h2>
+            <br />
+            <a class="btn-continue" data-next="#scene-click-through-1"><i class="fas fa-arrow-circle-right"></i>Start</a>
+          </div>
+          <div id="scene-end" class="scene">
+            <div class="icon">
+              <i class="fas fa-glass-cheers"></i>
+            </div>
+            <h2>Good Job!</h2>
+            <p>You have completed the course. I'm sure now you know exactly how a kettle works!</p>
+            <a class="btn-share"><i class="fab fa-twitter"></i>Share</a>
+          </div>
+
+          <!-- click through -->
+          <div id="scene-click-through-1" class="scene scene-feedback">
+              <img src="images/click-1.png" alt="" width="640px" height="436px">
+              <a class="btn-continue btn-transparent" data-next="#scene-click-through-2"
+              style="position:absolute; top:410px; left:315px;">Continue</a>
+              <a class="btn-continue btn-transparent-2" data-next="#scene-click-through-3"
+              style="position:absolute; top:260px; left:315px;">Continue</a>
+          </div>
+          <!-- click through 2-->
+          <div id="scene-click-through-2" class="scene scene-feedback">
+              <img src="images/c-2.png" alt="" width="640px" height="436px">
+              <a class="btn-continue btn-transparent" data-next="#scene-click-through-1"
+              style="position:absolute; top:465px; left:175px;">Contii</a>
+              <a class="btn-continue btn-transparent" data-next="#scene-title-kettle"
+              style="position:absolute; top:465px; left:590px;">Continueeee</a>
+          </div>
+          <!-- click through 3-->
+          <div id="scene-click-through-3" class="scene scene-feedback">
+              <img src="images/c-3.png" alt="" width="640px" height="436px">
+              <a class="btn-continue btn-transparent" data-next="#scene-click-through-1"
+              style="position:absolute; top:465px; left:175px;">Contii</a>
+              <a class="btn-continue btn-transparent" data-next="#scene-title-kettle"
+              style="position:absolute; top:465px; left:590px;">Continueeee</a>
+          </div>
+          <!-- before video-->
+          <div id="scene-title-kettle" class="scene">
+            <div class="icon">
+              <i class="far fa-grin"></i>
+            </div>
+            <h2>Video Time!</h2>
+            <p>Now watch the vieo to learn more about how a kettle works.</p>
+            <a class="btn-end"><i class="fas fa-magic"></i>Watch the Vieo</a>
+          </div>
+          <!-- test -->
+          <div id="scene-question-1" class="scene scene-question">
+            <h2>Question 1</h2>
+            <p>How does the heating part inside the kettle work?</p>
+            <div class="gallery select" data-target="#scene-answer-1">
+              <div class="frame option" data-next="#scene-correct-1">
+                <p>A. Resistor inside kettle heats aluminum board, and then heats the water inside.</p>
+              </div>
+              <div class="frame option" data-next="#scene-wrong-1">
+                <p>B. Capacitor inside kettle heats aluminum board, and then heats the water inside.</p>
+              </div>
+              <div class="frame option" data-next="#scene-wrong-1">
+                <p>C. Electricity flows inside kettle and turns into heat.</p>
+              </div>
+            </div>
+            <a class="btn-continue btn-disabled" data-next="#scene-answer-1"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <!-- justification part -->
+          <div id="scene-answer-1" class="scene scene-answer">
+            <h2>Justify Your Answer</h2>
+            <p>Why do you choose the option?</p>
+            <textarea class="input-answer" rows="4" placeholder="Explain why you think your answer is right."></textarea>
+            <a class="btn-continue btn-disabled" data-next="#scene-wrong-1"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <!-- feedback part -->
+          <div id="scene-correct-1" class="scene scene-feedback">
+            <div class="icon">
+              <i class="far fa-check-circle"></i>
+            </div>
+            <h2>Correct!</h2>
+            <p>Now read the explanation carefully, and see why your answer is right!</p>
+            <a class="btn-continue" data-next="#scene-correct-explanation-1"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <div id="scene-correct-explanation-1" class="scene scene-feedback">
+              <img src="images/fd-1.png" alt="" width="640px" height="436px">
+              <a class="btn-continue" data-next="#scene-question-2"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <div id="scene-wrong-1" class="scene scene-feedback">
+            <div class="icon icon-alert">
+              <i class="far fa-times-circle"></i>
+            </div>
+            <h2>Incorrect</h2>
+            <p>Now read the explanation carefully, and see the right answer!</p>
+            <a class="btn-continue" data-next="#scene-wrong-explanation-1"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <div id="scene-wrong-explanation-1" class="scene scene-feedback">
+              <img src="images/fd-2.png" alt="" width="640px" height="436px">
+              <a class="btn-continue" data-next="#scene-question-2"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <!-- question 2 -->
+          <div id="scene-question-2" class="scene scene-question">
+            <h2>Question 2</h2>
+            <p>How does the kettle know when to stop heating the water?</p>
+            <div class="gallery select" data-target="#scene-answer-2">
+              <div class="frame option" data-next="#scene-correct-2">
+                <p>A. When kettle boils, steam heats the thermostat and triggers the switch.</p>
+              </div>
+              <div class="frame option" data-next="#scene-wrong-2">
+                <p>B. When kettle boils, the thermostat measures the temperature of water and then triggers the switch.</p>
+              </div>
+              <div class="frame option" data-next="#scene-wrong-2">
+                <p>C. Timer inside the kettle will set off when it reaches a predefined time.</p>
+              </div>
+            </div>
+            <a class="btn-continue btn-disabled" data-next="#scene-answer-2"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <!-- justification part -->
+          <div id="scene-answer-2" class="scene scene-answer">
+            <h2>Justify Your Answer</h2>
+            <p>Why do you choose the option?</p>
+            <textarea class="input-answer" rows="4" placeholder="Explain why you think your answer is right."></textarea>
+            <a class="btn-continue btn-disabled" data-next="#scene-wrong-2"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <!-- feedback part -->
+          <div id="scene-correct-2" class="scene scene-feedback">
+            <div class="icon">
+              <i class="far fa-check-circle"></i>
+            </div>
+            <h2>Correct</h2>
+            <p>Now read the explanation carefully, and see why your answer is right!</p>
+            <a class="btn-continue" data-next="#scene-correct-explanation-2"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <div id="scene-correct-explanation-2" class="scene scene-feedback">
+              <img src="images/fd-2-r.png" alt="" width="640px" height="436px">
+              <a class="btn-continue" data-next="#scene-end"><i class="fas fa-arrow-circle-right"></i>Finish</a>
+          </div>
+          <div id="scene-wrong-2" class="scene scene-feedback">
+            <div class="icon icon-alert">
+              <i class="far fa-times-circle"></i>
+            </div>
+            <h2>Incorrect</h2>
+            <p>Now read the explanation carefully, and see the right answer!</p>
+            <a class="btn-continue" data-next="#scene-wrong-explanation-2"><i class="fas fa-arrow-circle-right"></i>Continue</a>
+          </div>
+          <div id="scene-wrong-explanation-2" class="scene scene-feedback">
+              <img src="images/fd-2-w.png" alt="" width="640px" height="436px">
+              <a class="btn-continue" data-next="#scene-end"><i class="fas fa-arrow-circle-right"></i>Finish</a>
+          </div>
+        </div>
+      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+      <div id="player"></div>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy; 2020. TOL project created by Ziqi Dong &amp; Yuchen Xie &amp; Han Xue</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# How Microwave Ovens Work
+# How Kettle Works
 
 ## Description
 
@@ -17,16 +17,7 @@ The project uses these following codes/libraries:
 - [Font Awesome](https://fontawesome.com/)
 
 
-Thanks **Dr. Chinmay Kulkarni** and **Mohammed Alburaiki** for creating such a wonderful course.
+Thanks **Dr. Chinmay Kulkarni** for creating such a wonderful course.
 
 ## References
 
-- https://www.businessinsider.com/how-do-microwaves-work-2014-6
-
-- https://gizmodo.com/what-actually-happens-when-you-put-metal-in-a-microwave-1569906393
-
-- https://www.scientificamerican.com/article/how-the-microwave-works/
-
-- https://www.youtube.com/watch?v=kp33ZprO0Ck
-
-- https://www.youtube.com/watch?v=MqsDPmnPKEk

@@ -1,5 +1,5 @@
 # How Kettle Works
-[demo](https://dakotadong.github.io/TOL-Kettle/index.html)
+[demo](https://dakotadong.github.io/TOL-Kettle/TOL-Kettle/index.html)
 
 ## Description
 
